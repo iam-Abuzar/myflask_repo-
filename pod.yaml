@@ -1,0 +1,13 @@
+iapiVersion: v1
+kind: Pod
+metadata: 
+  name: myflask-app 
+  labels:
+    app: flask-hello-world
+spec: 
+    containers: 
+      - name: myfirst-flask-container
+        image: abuzar1017/myflask:latest
+        ports: 
+          - containerPort: 5000
+
